@@ -4,4 +4,6 @@ By: **Brad Traversy**
 
 > No Express, just simple Node server
 
-View the app at https://bradnode.herokuapp.com/
+View the app:
+- HOME: https://bradnode.herokuapp.com/
+- ABOUT: https://bradnode.herokuapp.com/about
