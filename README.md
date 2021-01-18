@@ -6,6 +6,6 @@ Last updated on 18.01.2021 with `ncu -u`
 
 > No Express, just simple Node server
 
-The working app used to be here:
+The working app used to be here, but not its expired:
 - Home Page: https://bradnode.herokuapp.com/
 - About Page: https://bradnode.herokuapp.com/about
