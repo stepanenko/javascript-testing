@@ -1,0 +1,19 @@
+{
+  "name": "chai-mocha-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "rewire": "5.0.0",
+    "mocha": "8.3.2",
+    "sinon": "10.0.0",
+    "chai": "4.3.4"
+  },
+  "scripts": {
+    "test": "mocha cats.test",
+    "testall": "mocha --timeout 30000 ./*.js --exit" 
+  },
+  "keywords": [],
+  "author": "stepanenco",
+  "license": "ISC"
+}
