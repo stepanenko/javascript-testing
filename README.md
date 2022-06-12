@@ -24,5 +24,12 @@ it.only('this will be the only test that runs', () => {
    expect(true).toBe(false);
 });
 ```
+or
+```
+describe.only('this will be the only describe that runs', () => {
+   it("one", () = {});
+   it("two", () = {});
+});
+```
 
 More on that here: https://stackoverflow.com/questions/42827054/how-do-i-run-a-single-test-using-jest
