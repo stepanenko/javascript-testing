@@ -34,4 +34,13 @@ describe.only('this will be the only describe that runs', () => {
 });
 ```
 
+To skip a test add an `x` before `it` or `describe`:
+```js
+xdescribe('this will be the only describe that runs', () => {});
+
+xit('this will be the only describe that runs', () => {});
+```
+
+Try putting `skip` after `it` or `describe`: `it.skip("should ...", () => {});`
+
 More on that here: https://stackoverflow.com/questions/42827054/how-do-i-run-a-single-test-using-jest
