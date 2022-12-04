@@ -5,27 +5,29 @@
 
 ### Run specific tests
 
-`jest -t "fix-order-test"` only run tests that match the test name pattern you provide (`-t` = `--testNamePattern`)
+`jest -t "fix-order-test"` only run tests that match the test name pattern you provide
 
-If you have an it inside of a describe block, you have to run:
+`-t` - `--testNamePattern`
 
-`jest -t "<describeString> <itString>"`
+If you have an `it` inside of a `describe` block, you can run:
 
-Another option, inside you test code put `only`, e.g:
+`jest -t [describe] [it]`
 
-```
+Another option, inside your test code put `only`, e.g:
+
+```js
 test.only('this will be the only test that runs', () => {
    expect(true).toBe(false);
 });
 ```
 or
-```
+```js
 it.only('this will be the only test that runs', () => {
    expect(true).toBe(false);
 });
 ```
 or
-```
+```js
 describe.only('this will be the only describe that runs', () => {
    it("one", () = {});
    it("two", () = {});
