@@ -24,9 +24,9 @@ describe.only("Profile", () => { ... });
 To skip a test add an `x` before `it` or `describe`:
 
 ```js
-xdescribe('this will be the only describe that runs', () => {});
+xdescribe("Profile", () => {});
 
-xit('this will be the only describe that runs', () => {});
+xit("should return...", () => {});
 ```
 
 TO VERIFY: try putting `skip` after `it` or `describe`: `it.skip("should ...", () => {});`
