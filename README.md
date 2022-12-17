@@ -12,11 +12,11 @@ Lets say we have `describe("Contact Card", () => {...})` in the `ContactCard.tsx
 
 `jest -f service/api` - runs all tests in `api` folder (no test details)
 
-check if this works: `jest -t "Contact Card" "ContactCard"` - `"Contact Card"` - test name, `"ContactCard"` - test file name
+check if this works: `jest -t "Contact Card" "ContactCard"` (`"Contact Card"` - test name, `"ContactCard"` - test file name)
 
-If you have an `it` inside of a `describe` block, you can run:
+If you have an `it`/`test` inside of a `describe` block, you can run:
 
-`jest -t [describe] [it]`
+`jest -t [describe] [it/test]`
 
 To skip some tests in your file put `only`, e.g:
 
@@ -28,7 +28,7 @@ it.only("should return...", () => {});
 describe.only("Profile", () => { ... });
 ```
 
-To skip a test add an `x` before `it` or `describe`:
+To skip a test add an `x` before `it`/`test` or `describe`:
 
 ```js
 xdescribe("Profile", () => {});
@@ -36,7 +36,7 @@ xdescribe("Profile", () => {});
 xit("should return...", () => {});
 ```
 
-TO VERIFY: try putting `skip` after `it` or `describe`: `it.skip("should ...", () => {});`
+TO VERIFY: try putting `skip` after `it`/`test` or `describe`: `it.skip("should ...", () => {});`
 
 More on that here: https://stackoverflow.com/questions/42827054/how-do-i-run-a-single-test-using-jest
 
