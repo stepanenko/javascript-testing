@@ -4,13 +4,21 @@
 
 - ### Run a specific test or test file
 
-Lets say we have `describe("Contact Card", () => {...})` in the `ContactCard.tsx`:
+`npx react-scripts test src/utils/product/` - run all tests inside `product` folder
 
-`jest -t "Contact Card"` - runs tests that match test name pattern you provide (no test details) `-t` means `--testNamePattern`
+`npx react-scripts test src/utils/product/price.test.ts` - run only tests from `price` file (`.test.ts` can be omitted)
+
+If you have Jest installed globally:
 
 `jest -f ContactCard` - runs only files named ContactCard (gives each test details)
 
 `jest -f service/api` - runs all tests in `api` folder (no test details)
+
+`-f` - can be omitted
+
+`jest -t "Contact Card"` - runs ALL tests but skips them except those matching name after `-t`
+
+`-t` means `--testNamePattern`
 
 check if this works: `jest -t "Contact Card" "ContactCard"` (`"Contact Card"` - test name, `"ContactCard"` - test file name)
 
