@@ -51,7 +51,7 @@ More on that here: https://stackoverflow.com/questions/42827054/how-do-i-run-a-s
 
 - ### Debugging tests
 
-You can use the debug `method`, accessible from the `screen` object, to log the current HTML output of components:
+You can use the `debug` method, accessible from the `screen` object, to log the current HTML output of components:
 
 ```js
 it("displays contact card", () => {
