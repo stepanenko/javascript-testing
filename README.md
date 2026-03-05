@@ -4,6 +4,10 @@
 
 - ### Run a specific test or test file
 
+`npm test src/views/RegistrationForm.test.tsx` (`.test.ts` can be omitted)
+
+Using `npx` + `react-scripts`:
+
 `npx react-scripts test src/utils/product/` - run all tests inside `product` folder
 
 `npx react-scripts test src/utils/product/price.test.ts` - run only tests from `price` file (`.test.ts` can be omitted)
